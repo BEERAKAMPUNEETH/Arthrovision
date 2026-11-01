@@ -1,0 +1,5 @@
+Model,Accuracy,Balanced Accuracy,Macro F1,Kappa,MAE
+ResNet50,60.29%,56.39%,0.5279,0.7153,0.5448
+ResNet50 + TDA,60.90%,58.37%,0.5290,0.7291,0.5351
+TAFF,57.26%,52.17%,0.4845,0.6898,0.5884
+Ordinal TAFF,58.35%,48.74%,0.4813,0.6879,0.5726

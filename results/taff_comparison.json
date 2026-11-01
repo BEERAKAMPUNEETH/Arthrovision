@@ -1,0 +1,34 @@
+[
+    {
+        "Model": "ResNet50",
+        "Accuracy": "60.29%",
+        "Balanced Accuracy": "56.39%",
+        "Macro F1": "0.5279",
+        "Kappa": "0.7153",
+        "MAE": "0.5448"
+    },
+    {
+        "Model": "ResNet50 + TDA",
+        "Accuracy": "60.90%",
+        "Balanced Accuracy": "58.37%",
+        "Macro F1": "0.5290",
+        "Kappa": "0.7291",
+        "MAE": "0.5351"
+    },
+    {
+        "Model": "TAFF",
+        "Accuracy": "57.26%",
+        "Balanced Accuracy": "52.17%",
+        "Macro F1": "0.4845",
+        "Kappa": "0.6898",
+        "MAE": "0.5884"
+    },
+    {
+        "Model": "Ordinal TAFF",
+        "Accuracy": "58.35%",
+        "Balanced Accuracy": "48.74%",
+        "Macro F1": "0.4813",
+        "Kappa": "0.6879",
+        "MAE": "0.5726"
+    }
+]

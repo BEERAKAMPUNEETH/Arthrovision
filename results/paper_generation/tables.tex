@@ -1,0 +1,48 @@
+% ==================================================
+% ARTHROVISION-TDA AUTOMATIC PAPER TABLES DATA
+% ==================================================
+
+\begin{table}[h]
+\centering
+\caption{Visual Backbones Performance Comparison on Validation Set}
+\begin{tabular}{lccccc}
+\hline
+Backbone & Accuracy & Balanced Acc. & Macro F1 & Kappa & MAE \\
+\hline
+resnet50 & 0.5884 & 0.5467 & 0.5121 & 0.6943 & 0.5738 \\
+efficientnet & 0.5496 & 0.4567 & 0.4727 & 0.6160 & 0.6586 \\
+convnext & 0.6586 & 0.6786 & 0.6637 & 0.7797 & 0.4419 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Comparison of Class Imbalance Loss Functions (ResNet50 Backbone)}
+\begin{tabular}{lccccc}
+\hline
+Strategy & Accuracy & Balanced Acc. & Macro F1 & Kappa & MAE \\
+\hline
+A: Standard Cross Entropy & 0.6586 & 0.6786 & 0.6637 & 0.7797 & 0.4419 \\
+B: Class-weighted Cross Entropy & 0.2600 & 0.2303 & 0.2039 & 0.1284 & 1.5900 \\
+C: Weighted Random Sampler & 0.3000 & 0.2479 & 0.2256 & 0.2101 & 0.9900 \\
+D: Focal Loss & 0.3300 & 0.3684 & 0.2694 & 0.1962 & 1.2500 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Final ArthroVision-TDA Performance on Locked Hold-out Test Set}
+\begin{tabular}{lc}
+\hline
+Metric & Value \\
+\hline
+Accuracy & 0.5972 \\
+Balanced Accuracy & 0.5426 \\
+Macro F1-Score & 0.5172 \\
+Quadratic Kappa & 0.7041 \\
+Mean Absolute Error (MAE) & 0.5586 \\
+\hline
+\end{tabular}
+\end{table}

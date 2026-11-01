@@ -1,0 +1,95 @@
+{
+    "split_statistics": {
+        "train": {
+            "total_images": 5778,
+            "unique_patients": 2889,
+            "class_distribution": {
+                "KL0": {
+                    "count": 2286,
+                    "percentage": 39.56
+                },
+                "KL1": {
+                    "count": 1046,
+                    "percentage": 18.1
+                },
+                "KL2": {
+                    "count": 1516,
+                    "percentage": 26.24
+                },
+                "KL3": {
+                    "count": 757,
+                    "percentage": 13.1
+                },
+                "KL4": {
+                    "count": 173,
+                    "percentage": 2.99
+                }
+            }
+        },
+        "val": {
+            "total_images": 826,
+            "unique_patients": 413,
+            "class_distribution": {
+                "KL0": {
+                    "count": 328,
+                    "percentage": 39.71
+                },
+                "KL1": {
+                    "count": 153,
+                    "percentage": 18.52
+                },
+                "KL2": {
+                    "count": 212,
+                    "percentage": 25.67
+                },
+                "KL3": {
+                    "count": 106,
+                    "percentage": 12.83
+                },
+                "KL4": {
+                    "count": 27,
+                    "percentage": 3.27
+                }
+            }
+        },
+        "test": {
+            "total_images": 1656,
+            "unique_patients": 828,
+            "class_distribution": {
+                "KL0": {
+                    "count": 639,
+                    "percentage": 38.59
+                },
+                "KL1": {
+                    "count": 296,
+                    "percentage": 17.87
+                },
+                "KL2": {
+                    "count": 447,
+                    "percentage": 26.99
+                },
+                "KL3": {
+                    "count": 223,
+                    "percentage": 13.47
+                },
+                "KL4": {
+                    "count": 51,
+                    "percentage": 3.08
+                }
+            }
+        }
+    },
+    "overlaps": {
+        "train_val_count": 0,
+        "train_test_count": 0,
+        "val_test_count": 0,
+        "train_val_examples": [],
+        "train_test_examples": [],
+        "val_test_examples": []
+    },
+    "patient_bilaterality": {
+        "patients_with_both_knees": 4130,
+        "patients_crossing_splits": 0,
+        "crossing_patients": []
+    }
+}

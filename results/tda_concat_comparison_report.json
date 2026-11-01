@@ -1,0 +1,26 @@
+[
+    {
+        "Model": "ResNet50 baseline",
+        "Accuracy": "60.29%",
+        "Balanced Accuracy": "56.39%",
+        "Macro F1": "0.5279",
+        "Kappa": "0.7153",
+        "MAE": "0.5448"
+    },
+    {
+        "Model": "TDA-only",
+        "Accuracy": "39.35%",
+        "Balanced Accuracy": "19.88%",
+        "Macro F1": "0.1166",
+        "Kappa": "0.0061",
+        "MAE": "1.2119"
+    },
+    {
+        "Model": "ResNet50 + TDA concat",
+        "Accuracy": "60.90%",
+        "Balanced Accuracy": "58.37%",
+        "Macro F1": "0.5290",
+        "Kappa": "0.7291",
+        "MAE": "0.5351"
+    }
+]

@@ -1,0 +1,28 @@
+{
+    "total_records": 8260,
+    "total_unique_patients": 4130,
+    "splits_info": {
+        "train": {
+            "images": 5778,
+            "patients": 2889
+        },
+        "val": {
+            "images": 826,
+            "patients": 413
+        },
+        "test": {
+            "images": 1656,
+            "patients": 828
+        }
+    },
+    "intersections": {
+        "train_val_overlap_count": 0,
+        "train_test_overlap_count": 0,
+        "val_test_overlap_count": 0
+    },
+    "bilaterality": {
+        "patients_with_both_knees": 4130,
+        "patients_crossing_splits": 0,
+        "crossing_patient_ids": []
+    }
+}

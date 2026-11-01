@@ -1,0 +1,46 @@
+[
+    {
+        "Configuration": "A: Resize + Normalization",
+        "use_clahe": false,
+        "use_roi": false,
+        "Accuracy": 0.32,
+        "Balanced Acc": 0.2643058161350844,
+        "Macro F1": 0.16862745098039217,
+        "Weighted F1": 0.25957516339869274,
+        "Kappa": 0.14150207120129676,
+        "MAE": 1.26
+    },
+    {
+        "Configuration": "B: Resize + Normalization + CLAHE",
+        "use_clahe": true,
+        "use_roi": false,
+        "Accuracy": 0.23,
+        "Balanced Acc": 0.19814727954971856,
+        "Macro F1": 0.1506741906741907,
+        "Weighted F1": 0.22768517968517968,
+        "Kappa": -0.04651162790697683,
+        "MAE": 1.35
+    },
+    {
+        "Configuration": "C: Resize + Normalization + ROI",
+        "use_clahe": false,
+        "use_roi": true,
+        "Accuracy": 0.26,
+        "Balanced Acc": 0.25546435272045026,
+        "Macro F1": 0.13618224900354642,
+        "Weighted F1": 0.17012502746131875,
+        "Kappa": 0.03395504543280725,
+        "MAE": 1.14
+    },
+    {
+        "Configuration": "D: Resize + Normalization + CLAHE + ROI",
+        "use_clahe": true,
+        "use_roi": true,
+        "Accuracy": 0.21,
+        "Balanced Acc": 0.25358818011257034,
+        "Macro F1": 0.1940851833933595,
+        "Weighted F1": 0.21683721263595476,
+        "Kappa": 0.05079660666252839,
+        "MAE": 1.57
+    }
+]

@@ -1,0 +1,55 @@
+dataset:
+  name: KneeXrayMini
+  path: C:/Users/punee/Downloads/archive/KneeXrayMini
+  splits:
+  - train
+  - val
+  - test
+development:
+  backbone_learning_rate: 0.0001
+  epochs: 1
+  learning_rate: 0.001
+  subset_mode: true
+  warmup_epochs: 0
+full_training:
+  backbone_learning_rate: 1.0e-05
+  epochs: 10
+  learning_rate: 0.0001
+  subset_mode: false
+  warmup_epochs: 2
+mode: full_training
+model:
+  device: cpu
+  fusion_embedding_dim: 64
+  num_classes: 5
+  topological_embedding_dim: 32
+  visual_embedding_dim: 128
+preprocessing:
+  clip_limit: 2.0
+  target_size:
+  - 224
+  - 224
+  tile_grid_size:
+  - 8
+  - 8
+  use_clahe: false
+  use_roi: false
+tda:
+  downsample_size:
+  - 64
+  - 64
+  feature_dim: 16
+  max_points: 400
+  representation: alpha
+training:
+  backbone_learning_rate: 1.0e-05
+  batch_size: 16
+  dropout: 0.3
+  early_stopping_patience: 3
+  epochs: 10
+  learning_rate: 0.0001
+  num_workers: 0
+  random_seed: 42
+  subset_mode: false
+  warmup_epochs: 2
+  weight_decay: 0.0001

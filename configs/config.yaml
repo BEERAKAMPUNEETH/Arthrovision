@@ -1,0 +1,35 @@
+seed: 42
+demo_mode: true # Set to false to run on real OAI data paths
+real_data_dir: "data/raw" # Path to real OAI images/masks directory
+real_clinical_csv: "data/raw/oai_clinical_subset.csv" # Path to real OAI clinical CSV
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  split_dir: "data/splits"
+  images_dir: "data/raw/images"
+  masks_dir: "data/raw/masks"
+
+model:
+  visual:
+    backbone: "resnet50"
+    feature_dim: 2048
+    num_slices: 5 # Number of slices for multi-slice visual aggregation
+    aggregation: "mean" # mean or attention
+  topological:
+    max_dimension: 2
+    feature_dim: 16
+  clinical:
+    feature_dim: 4 # age, bmi, pain_score, gender
+  fusion:
+    type: "topology_aware" # topology_aware or simple_concat
+    embed_dim: 64
+  classification:
+    num_classes: 5 # KL grades 0, 1, 2, 3, 4
+    dropout: 0.3
+
+training:
+  batch_size: 4
+  lr: 0.0005
+  epochs: 5
+  device: "cpu"

@@ -1,0 +1,19 @@
+==================================================
+KL1-SPECIFIC AUDIT & PER-CLASS PERFORMANCE
+==================================================
+Accuracy: 0.4500
+Balanced Accuracy: 0.2885
+
+Per-Class Precision & Recall:
+  KL0: Precision = 0.4409, Recall = 1.0000
+  KL1: Precision = 0.0000, Recall = 0.0000
+  KL2: Precision = 0.5714, Recall = 0.1538
+  KL3: Precision = 0.0000, Recall = 0.0000
+  KL4: Precision = 0.0000, Recall = 0.0000
+
+Row-Normalized Confusion Matrix (Recall):
+[[1.    , 0.    , 0.    , 0.    , 0.    ],
+ [1.    , 0.    , 0.    , 0.    , 0.    ],
+ [0.8462, 0.    , 0.1538, 0.    , 0.    ],
+ [0.7692, 0.    , 0.2308, 0.    , 0.    ],
+ [0.    , 0.    , 0.    , 0.    , 0.    ]]

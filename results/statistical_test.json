@@ -1,0 +1,15 @@
+{
+    "contingency_table": [
+        [
+            162,
+            97
+        ],
+        [
+            328,
+            239
+        ]
+    ],
+    "mcnemar_chi2": 124.4705882323654,
+    "p_value": 2.085442160708994e-30,
+    "statistically_significant": true
+}
